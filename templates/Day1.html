@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+     <link rel="stylesheet" type="text/css" href="../css/main.css">
+<!--        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    
+    </head>
+<body ng-app="myApp" ng-controller="myCtrl">
+    <div>
+<p>Item 1 : <input type="number" ng-model="a"></p>
+<p>Item 2 : <input type="number" ng-model="b"></p>
+<p>Item 3 : <input type="number" ng-model="c"></p>
+<p>Item 4 : <input type="number" ng-model="d"></p>
+<h1>Total: {{ a + b + c + d }}</h1><br>
+    </div>
+<!--    <mybox></mybox> -->
+    <div mybox></div><br>
+    <file-upload></file-upload><br>
+    <like-box>
+    
+    <div class="container row">
+    <div class="col 6">
+        <p><strong>Nikhil says:</strong> Hey! Great session by Somya</p>
+    </div>
+    <div class="col 3">
+      <button type="btn btn-primary" ng-modal="like1" ng-click="ClickAction('like1')">Like</button>
+        </div>
+        <div>{{Count}}</div>
+    </div>
+    <div class="container row">
+    <div class="col 6">
+        <p><strong> Hazara Says : </strong>Will ask doubts as we get </p>
+    </div>
+    <div class="col 3">
+      <button type="btn btn-primary" ng-modal="like2" ng-click="ClickAction('like2')">Like</button>
+        </div>
+       <div>{{Count}}</div>
+    </div>
+    <div class="container row">
+    <div class="col 6">
+        <p><strong>Somya Says :</strong> who is going to give me treat ??</p>
+    </div>
+    <div class="col 3">
+      <button type="btn btn-primary" ng-modal="like3" ng-click="ClickAction('like3')">Like</button>
+        </div>
+        <div>{{Count}}</div>
+    </div>
+    </like-box>
+    <scroll-top></scroll-top>
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  
+  <script src="../Js/day1.js"></script>
+  </body>
+  </html>
